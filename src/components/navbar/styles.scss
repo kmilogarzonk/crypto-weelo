@@ -1,0 +1,65 @@
+@import "../../config/scss/config.scss";
+
+.navbar {
+  padding: .5rem;
+  margin: 0 auto 1.5rem;
+  width: calc(100% - 1.75rem);
+  height: 70px;
+  background-color: $navbar-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .date, .logoNav {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .imgLogo {
+      width: auto;
+      height: 60px;
+    }
+
+    p.dateNow {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .navbar {
+    padding: .3rem;
+    height: 50px;
+    width: calc(100% - 1rem);
+
+    .date, .logoNav {
+      width: 30%;
+
+      .imgLogo {
+        height: 45px;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mini-mobile) {
+  .navbar {
+    margin: 0 auto 0.8rem;
+    padding: .3rem 15px;
+    width: calc(100% - 2rem);
+
+    .date, .logoNav {
+      width: 40%;
+    }
+
+    .logoNav {
+      justify-content: flex-start;
+    }
+
+    .date {
+      justify-content: flex-end;
+    }
+  }
+}

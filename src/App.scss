@@ -1,0 +1,45 @@
+@import "./config/scss/config.scss";
+
+html, body {
+  margin: 0;
+  font-family: 'Murecho', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $primary;
+  color: $color-font;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card{
+  border-radius: $card-border-radius;
+  -webkit-box-shadow: 3px 3px 25px 0px $shadow-card;
+  -moz-box-shadow: 3px 3px 25px 0px $shadow-card;
+  box-shadow: 3px 3px 25px 0px $shadow-card;
+
+  &.tableCard {
+    padding: .8rem;
+    background-color: $card-color;
+    display: grid;
+  }
+}
+
+.divisorRight {
+  border-right: 1px solid $divisor;
+}
+
+button{
+  &:disabled {
+    svg {
+      fill: $color-font-disabled;
+    }
+  }
+
+  svg {
+    fill: $color-font;
+  }
+}

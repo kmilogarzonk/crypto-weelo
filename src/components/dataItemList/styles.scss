@@ -1,0 +1,18 @@
+@import "../../config/scss/config.scss";
+
+.itemList {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin: 0 .5rem;
+  width: auto;
+
+  .titleItem {
+    margin: 0 5px;
+  }
+
+  .valueItem {
+    color: $second-color-font    
+  }
+
+}

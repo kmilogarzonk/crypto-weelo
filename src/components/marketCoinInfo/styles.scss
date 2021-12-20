@@ -1,0 +1,75 @@
+@import "../../config/scss/config.scss";
+
+.dataCoinAditional {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 0 .3rem;
+
+  .dataCoin {
+    grid-column: span 4 / auto;
+    padding: .7rem 1rem;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    .titlesDataCoin {
+      color: $third-color-font;
+      font-size: 14px;
+      line-height: 1;
+      font-weight: normal;
+      margin: 0 0 .2rem;
+    }
+
+    .ValueDataCoin {
+      font-size: 18px;
+    }
+
+    .boxIntern, .formatContinue {
+      margin-bottom: 1.5rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .textPill {
+      display: flex;
+      align-items: center;
+
+      &:first-of-type {
+        margin-right: .7rem;
+      }
+    }
+
+  }
+
+}
+
+// Responsive
+@media (max-width: $breakpoint-mobile) {
+  .dataCoinAditional {
+
+    .dataCoin {
+      grid-column: span 6 / auto;
+
+      &.divisorRight:nth-child(2) {
+        border-right: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mini-mobile) {
+  .dataCoinAditional {
+
+    .dataCoin {
+      grid-column: span 12 / auto;
+      padding: 0;
+
+      &.divisorRight {
+        border-right: 0px;
+      }
+    }
+  }
+}

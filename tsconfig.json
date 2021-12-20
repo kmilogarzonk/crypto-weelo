@@ -21,6 +21,10 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src/config", "rules.d.ts"
+  ],
+  "exclude": [
+    "**/*test.ts",
+    "**/*.spec.ts"
   ]
 }

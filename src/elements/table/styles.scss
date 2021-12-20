@@ -1,0 +1,19 @@
+@import "../../config/scss/config.scss";
+
+.itemCurrency {
+  display: flex;
+  align-items: center;
+  color: $color-link;
+  text-decoration: none;
+
+  .name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .symbol {
+    margin: 0 .15rem;
+    font-size: 10px;
+    color: $color-second-link;
+  }
+}

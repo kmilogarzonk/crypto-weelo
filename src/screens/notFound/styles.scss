@@ -1,0 +1,42 @@
+@import "../../config/scss/config.scss";
+
+.notFound {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .notFoundTable {
+    height: 30rem;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+
+    .imgNotFound {
+      width: 15rem;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+  
+    .notFoundText {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-weight: 600;
+      line-height: 1;
+      margin: 0;
+
+      .titleNotFound {
+        margin: 0 5px 0 0;
+        font-size: 26px;
+      }
+
+      .linkHome {
+        color: $color-link;
+        font-size: 26px;
+      }
+    }
+  }
+
+}

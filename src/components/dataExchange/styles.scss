@@ -1,0 +1,36 @@
+@import "../../config/scss/config.scss";
+
+.dataExchange {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .topInfoExchange {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 1rem;
+
+    .externLink {
+      display: flex;
+      align-items: center;
+
+      .nameExchange {
+        margin: 0 8px 0 0;
+        line-height: 1;
+      }
+
+      .external {
+        color: $color-link;
+      }
+    }
+
+    .dateExchange {
+      font-size: 14px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

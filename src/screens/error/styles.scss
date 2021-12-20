@@ -1,0 +1,48 @@
+@import "../../config/scss/config.scss";
+
+.errorPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .errorPageTable {
+    min-height: 35rem;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+
+    .imgerrorPage {
+      width: 15rem;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+  
+    .errorPageText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      line-height: 1;
+      margin: 0;
+      width: 80%;
+
+      .titleerrorPage {
+        margin: 0 5px 0 0;
+        font-size: 26px;
+        font-weight: 600;
+      }
+
+      .linkHome {
+        color: $color-link;
+        font-size: 16px;
+      }
+
+      .codeError {
+        margin: 1rem auto;
+      }
+    }
+  }
+
+}
